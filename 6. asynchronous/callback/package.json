@@ -1,0 +1,14 @@
+{
+    "name": "data.json",
+    "version": "1.0.0",
+    "description": "Proyek untuk menampilkan data pengguna dalam tabel menggunakan Bootstrap",
+    "main": "index.html",
+    "scripts": {
+      "start": "live-server --port=3000 --open=index.html"
+    },
+    "author": "bima",
+    "license": "MIT",
+    "devDependencies": {
+      "live-server": "^1.2.1"
+    }
+  }

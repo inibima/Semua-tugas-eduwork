@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Library</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <div id="grid-container"></div>
+  </div>
+  <script src="grid.js"></script>
+  <script>
+    // Contoh penggunaan library
+    const data = [
+      { name: "Nugraha Bhirawa Kholis", age: 26, email: "linemasakini@gmail.com" },
+      { name: "Nugraha Bhirawa Kholis", age: 26, email: "androholic080809@gmail.com" },
+      { name: "Nugraha Bhirawa Kholis", age: 26, email: "bimametal522@gmail.com" }
+    ];
+
+    const columns = [
+      { name: "Name", field: "name" },
+      { name: "Age", field: "age" },
+      { name: "Email", field: "email" }
+    ];
+
+    const grid = new Grid({
+      data: data,
+      columns: columns,
+      container: "#grid-container"
+    });
+
+    grid.render();
+  </script>
+</body>
+</html>

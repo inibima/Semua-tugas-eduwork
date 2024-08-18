@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header dengan Menu di Tengah Paragraf</title>
+    <style>
+        /* Styling untuk body */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #add8e6; /* Warna latar belakang biru muda */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        /* Styling untuk container */
+        .container {
+            width: 80%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        /* Styling untuk header */
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .header-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+        /* Styling untuk sidebar */
+        .sidebar {
+            width: 200px;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 8px;
+            margin-left: 20px;
+        }
+        /* Styling untuk konten paragraf */
+        .content {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .main-content {
+            flex: 1;
+        }
+        /* Styling untuk menu-container */
+        .menu-container {
+            text-align: center; /* Menengahkan konten */
+            margin-top: 20px;
+        }
+        nav {
+            display: inline-block; /* Mengubah nav menjadi inline-block */
+            gap: 20px;
+        }
+        nav a {
+            color: #333; /* Warna teks menu */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #555;
+            color: #fff; /* Ubah warna teks saat dihover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img class="header-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh3uuTk39P4PqdZ02jYDb9RW8c-5H46YeUaA-TbCa49w&s" alt="Header Image">
+            <div class="header-title">Belajar HTML itu sangat menyenangkan</div>
+        </header>
+
+        <div class="content">
+            <div class="main-content">
+                <h2>Tentang</h2>
+                <p>Ini adalah konten paragraf. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a elit quis est eleifend ullamcorper. Nulla ultricies dui sit amet dui euismod bibendum. Integer ullamcorper risus sit amet libero consequat, ac lobortis orci posuere. Sed malesuada orci ac nunc maximus hendrerit. Etiam accumsan tortor eget orci hendrerit, eu dignissim dolor tristique. Proin sit amet eros in felis eleifend ultricies at ac enim. Sed et ligula non urna fringilla gravida a nec orci. Nam aliquam massa velit, vel elementum elit tincidunt et. Aenean scelerisque, velit in finibus vestibulum, velit magna hendrerit urna, vel sodales urna lectus a libero.</p>
+            </div>
+            <div class="sidebar">
+                <h3>Sidebar</h3>
+                <p>Ini adalah sidebar kotak di sebelah kanan paragraf.</p>
+            </div>
+        </div>
+
+        <div class="menu-container">
+        </div>
+    </div>
+</body>
+</html>

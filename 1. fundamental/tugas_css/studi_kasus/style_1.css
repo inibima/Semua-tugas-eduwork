@@ -1,0 +1,14 @@
+.container {
+	width : 100%;
+	
+}
+
+.line {
+	background: yellow;
+	width: 200px;
+	height: 5px;
+}
+
+.title {
+	font-size: 42px;
+}
